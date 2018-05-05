@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        span {
+            background: inherit;
+            color: hotpink;
+            font-size: 50px;
+            border: 0;
+        }
+        #container {
+            border: 1px solid rgb(212, 119, 119);
+            overflow: auto;
+            margin: 1em auto;
+            position: relative;
+            max-height: 450px;
+        }
+        #content {
+            background-color: rgb(176, 134, 230); width: 100%;
+            font-size: 30px;
+        }
+        .scroll-control-buttons {
+            margin: 0 auto;
+            max-width: 600px;
+            width: 100%;
+            display: none;
+            justify-content: space-evenly;
+            position: relative;
+            bottom: 70px;
+        }
+        tr td {
+            font-size: 30px;
+        }
+
+        @media(max-width: 600px) {
+            .container {
+                max-width: 600px;
+            }
+            .scroll-control-buttons {
+                display: flex;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="content">Lorem ipsum dolor sit amet.</div>
+    <div id="container">
+        <table  border="0" id="pnProductNavContents" class="pn-ProductNav_Contents">
+                <thead>
+                    <tr >
+                        <th class="pn-ProductNav_Link" aria-selected="true">Name</th>
+                        <th class="pn-ProductNav_Link">Gender</th>
+                        <th class="pn-ProductNav_Link">Phone</th>
+                        <th class="pn-ProductNav_Link">Country</th>
+                        <th class="pn-ProductNav_Link">Position</th>
+                        <th class="pn-ProductNav_Link">Gender</th>
+                        <th class="pn-ProductNav_Link">Phone</th>
+                        <th class="pn-ProductNav_Link">Country</th>
+                        <th class="pn-ProductNav_Link">Position</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Salman</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Salman</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Salman</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Salman</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Salman</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Salman</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Salman</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Salman</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Salman</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Salman</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Salman</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Salman</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Salman</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Salman</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Salman</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Salman</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Salman</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Salman</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                        <td>Male</td>
+                        <td>0123456789</td>
+                        <td>Indonesia</td>
+                        <td>Front-end Developer</td>
+                    </tr>
+
+                </tbody>
+            </table>
+    </div>
+    <div class="scroll-control-buttons">
+        <span id="slide2" type="button"> < </span>
+        <span id="slide" type="button">></span>
+    </div>
+
+    <script>
+        document.addEventListener(
+            'DOMContentLoaded', function () {   
+            var button = document.getElementById('slide');
+            var button2 = document.getElementById('slide2');
+            button.onclick = function () {
+                document.getElementById('container').scrollLeft += 220;
+            };
+            button2.onclick = function () {
+                document.getElementById('container').scrollLeft -= 220;
+                console.log("2")
+            };
+        }, false);
+    </script>
+   
+</body>
+</html
