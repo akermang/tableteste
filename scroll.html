@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
         body {
             margin: 0;
@@ -286,18 +286,22 @@
     </div>
 
     <script>
-        document.addEventListener(
-            'DOMContentLoaded', function () {   
-            var button = document.getElementById('slide');
-            var button2 = document.getElementById('slide2');
-            button.onclick = function () {
-                document.getElementById('container').scrollLeft += 300;
-            };
-            button2.onclick = function () {
-                document.getElementById('container').scrollLeft -= 300;
-                console.log("2")
-            };
-        }, false);
+   $( "#slide" ).click(function() {
+  $( "#container" ).animate({
+    scrollLeft: "+=300"
+  }, 500, function() {
+    // Animation complete.
+  });
+});
+
+
+ $( "#slide2" ).click(function() {
+  $( "#container" ).animate({
+    scrollLeft: "-=300"
+  }, 500, function() {
+    // Animation complete.
+  });
+});
     </script>
    
 </body>
